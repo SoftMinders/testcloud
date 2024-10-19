@@ -1,0 +1,119 @@
+@media (min-width: 992px) {
+  .layout-dashboard {
+    .ant-layout-footer {
+      margin: 0 0 20px 20px;
+    }
+
+    .ant-layout-sider.sider-primary {
+      margin: 0;
+      height: 100vh;
+    }
+
+    .ant-layout {
+      width: auto;
+      flex-shrink: 1;
+      margin-left: 250px;
+      padding: 0 10px;
+    }
+
+    .sidebar-toggler {
+      display: none;
+    }
+  }
+  .card-billing-info.ant-card {
+    .ant-card-body {
+      display: flex;
+    }
+  }
+}
+.layout-dashboard {
+  .header {
+   margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .layout-dashboard {
+    .ant-layout-header {
+      margin: 0px 15px;
+    }
+
+    .header-control {
+      margin-top: 0;
+
+      .header-search {
+        margin: 0 12px;
+      }
+    }
+    .btn-sign-in {
+      cursor: default;
+      span {
+        display: inline;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .profile-nav-bg {
+    margin-top: -87.8px;
+  }
+  .card-profile-head {
+    margin: -53px 24px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .layout-dashboard {
+    .record-btns{
+      span {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    width: auto;
+  }
+
+  .layout-dashboard {
+    .btn-sign-in {
+      span {
+        display: none;
+      }
+    }
+    .export-btn{
+      display: none !important;
+    }
+  }
+  .layout-dashboard.layout-dashboard-rtl {
+    .header-control {
+      justify-content: flex-end;
+    }
+  }
+  .ant-table{
+    .ant-table-content{
+      overflow-x: auto;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header{
+    flex-wrap: wrap-reverse;
+    .header-actions{
+      width: 100%;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+    }
+  }
+}
+@media (max-width: 600px) {
+
+  .header-actions{
+    &>:not(style)~:not(style){
+      margin-left: 10px !important;
+    }
+  }
+}

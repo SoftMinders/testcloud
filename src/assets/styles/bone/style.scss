@@ -1,0 +1,176 @@
+.home-layout {
+  --blue-primary: #BD42F4; /* Replace with the desired color */
+  --blue-secondary: #2C68F4; /* Replace with the desired color */
+  --bg-gradient: linear-gradient(90deg,#bd42f4,#2c68f4);
+
+  .gradient-text {
+    background: linear-gradient(
+                    90deg,
+                    #5ac39a 11.92%,
+                    #2c68f4 47.2%,
+                    #bd42f4 74.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+.bone-layout {
+  --blue-primary: #BD42F4; /* Replace with the desired color */
+  --blue-secondary: #2C68F4; /* Replace with the desired color */
+  --bg-gradient: linear-gradient(to right bottom, rgb(85, 184, 165), rgb(0, 179, 188), rgb(0, 170, 216), rgb(0, 157, 240), rgb(0, 138, 248), rgb(31, 126, 250), rgb(59, 113, 249), rgb(85, 98, 246), rgb(107, 94, 247), rgb(126, 88, 247), rgb(144, 82, 246), rgb(161, 74, 244));
+
+  .gradient-text {
+    background: linear-gradient(
+                    90deg,
+                    #5ac39a 11.92%,
+                    #2c68f4 47.2%,
+                    #bd42f4 74.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+.mri-layout {
+  --blue-primary: #E4A118; /* Replace with the desired color */
+  --blue-secondary: #F16622; /* Replace with the desired color */
+  --bg-gradient: linear-gradient(195deg,#192C73,#131E47);
+  .gradient-text {
+    background: linear-gradient(
+                    90deg,
+                    #E4A118 47.2%,
+                    #F16622 74.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+.dna-layout {
+  --blue-primary: #E4A118; /* Replace with the desired color */
+  --blue-secondary: #BD42F4; /* Replace with the desired color */
+  --bg-gradient: #BD42F4;
+  .gradient-text {
+    background: linear-gradient(
+                    90deg,
+                    #BD42F4 47.2%,
+                    #E4A118 74.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+.books-layout {
+  --blue-primary: #344767; /* Replace with the desired color */
+  --blue-secondary: #65b7a1; /* Replace with the desired color */
+  --bg-gradient: linear-gradient(109.6deg, #344767 11.2%, rgb(28, 103, 88) 91.1%);
+  .gradient-text {
+    background: linear-gradient(
+                    90deg,
+                    #3b9199 47.2%,
+                    #344767 74.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+
+
+@import "core/abstracts/functions",
+		"settings/settings",
+        "core/abstracts/mixins",
+        'core/abstracts/include-media';
+
+@import "core/normalize";
+
+@import "core/base/typography";
+@import "core/elements/containers";
+@import "core/elements/accordion";
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+@import "core/elements/buttons";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "core/elements/forms";
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+@import "core/elements/modal";
+
+
+/*--------------------------------------------------------------
+# Tabs
+--------------------------------------------------------------*/
+@import "core/elements/tabs";
+
+/*--------------------------------------------------------------
+# Timeline
+--------------------------------------------------------------*/
+@import "core/elements/timeline";
+
+/*--------------------------------------------------------------
+# Split pattern
+--------------------------------------------------------------*/
+@import "core/patterns/split";
+
+/*--------------------------------------------------------------
+# Tiles pattern
+--------------------------------------------------------------*/
+@import "core/patterns/tiles";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@import "core/layout/header";
+
+/*--------------------------------------------------------------
+# Site content
+--------------------------------------------------------------*/
+@import "core/layout/main";
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "core/layout/footer";
+
+/*--------------------------------------------------------------
+# Section
+--------------------------------------------------------------*/
+@import "core/sections/section";
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+@import "core/sections/hero";
+@import "core/elements/hamburger";
+/*--------------------------------------------------------------
+# Features tiles
+--------------------------------------------------------------*/
+@import "core/sections/features-tiles";
+
+/*--------------------------------------------------------------
+# Features tabs
+--------------------------------------------------------------*/
+@import "core/sections/features-tabs";
+@import "core/sections/pricing";
+@import "core/sections/testimonial";
+
+/*--------------------------------------------------------------
+# News
+--------------------------------------------------------------*/
+@import "core/sections/news";
+/*--------------------------------------------------------------
+# Theme
+--------------------------------------------------------------*/
+@import "theme/theme";
+
+/*--------------------------------------------------------------
+# Helpers
+--------------------------------------------------------------*/
+@import "core/base/helpers";

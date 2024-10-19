@@ -1,0 +1,282 @@
+@import "react-widgets/scss/styles.scss";
+@import "~antd/dist/antd.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "slick-carousel/slick/slick.css";
+
+:root {
+    --blue-primary: #BD42F4;
+    --blue-secondary: #2C68F4;
+    --blue-light: #f3f6fd;
+    --blue-dark: #454B5E;
+    --yellow-primary: #E4A118;
+    --yellow-secondary: #F16622;
+    --yellow-light: #faded0;
+    --red-primary: #ec407a;
+    --red-secondary: #d81b60;
+    --red-light: #ffe6e6;
+
+    --green-primary: #65b7a1;
+    --green-secondary: #154437;
+    --green-light: #dfffe4;
+    --white: white;
+    --primary-text: #344767;
+    --primary-bg: #F5F5FE;
+    --blue-gradient: linear-gradient(195deg,var(--blue-secondary),var(--blue-primary));
+    --yellow-gradient: linear-gradient(195deg,var(--yellow-secondary),var(--yellow-primary));
+    --red-gradient: linear-gradient(195deg,var(--red-secondary),var(--red-primary));
+    --green-gradient: linear-gradient(195deg,var(--green-secondary),var(--green-primary));
+    /*--light-blue-gradient: linear-gradient(316deg, #e5d9f2 0%, #cdc1ff99 74%);*/
+    --light-blue-gradient:linear-gradient(90deg, #d2e6f8 0%, #e5eaff 74%);
+    --light-yellow-gradient: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+    --border: 1px solid #d8d8d8;
+    --light-black:#525252
+}
+.box-shadow{
+    box-shadow: 0 4px 16px rgba(16, 29, 45, 0.08);
+}
+
+.color-blue{
+    color: var(--blue-primary);
+}
+.color-yellow{
+    color: var(--yellow-primary);
+}
+.color-red{
+    color: var(--red-primary);
+}
+.color-green{
+    color: var(--green-primary);
+}
+.color-green-secondary{
+    color: var(--green-secondary);
+}
+.color-yellow-secondary{
+    color: var(--yellow-secondary);
+}
+.color-blue-secondary{
+    color: var(--blue-secondary);
+}
+.color-primary-text{
+    color: var(--primary-text);
+}
+.color-black{
+    color: black !important;
+}
+
+.stripe-bg-gradient{
+    background: var(--light-yellow-gradient)
+}
+
+
+@font-face{
+    font-family:'Poppins Light';
+    src:url('./fonts/poppins/Poppins-Light.ttf') format('truetype');
+    font-weight:500;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Poppins Light Italic';
+    src:url('./fonts/poppins/Poppins-LightItalic.ttf') format('truetype');
+    font-weight:300;
+    font-style:italic;
+}
+@font-face{
+    font-family:'Poppins';
+    src:url('./fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Poppins Italic';
+    src:url('./fonts/poppins/Poppins-Italic.ttf') format('truetype');
+    font-weight:400;
+    font-style:italic;
+}
+@font-face{
+    font-family:'Poppins SemiBold';
+    src:url('./fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight:500;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Poppins SemiBold Italic';
+    src:url('./fonts/poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+    font-weight:600;
+    font-style:italic;
+}
+@font-face{
+    font-family:'Poppins Medium';
+    src:url('./fonts/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight:500;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Poppins Bold';
+    src:url('./fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight:700;
+    font-style:normal;
+}
+@font-face{
+    font-family:'Poppins Bold Italic';
+    src:url('./fonts/poppins/Poppins-BoldItalic.ttf') format('truetype');
+    font-weight:700;
+    font-style:italic;
+}
+
+body {
+    letter-spacing: 0.1px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: Poppins, sans-serif;
+    background: transparent;
+    overflow-y: visible !important;
+    width: 100% !important;
+}
+
+#root{
+    overflow-x: hidden;
+}
+
+
+.ant-notification{
+    z-index: 1112;
+}
+.ant-modal-wrap{
+    z-index: 1111;
+}
+.ant-drawer-mask{
+    z-index: -1;
+}
+.font-light{
+    font-family: "Poppins Light", sans-serif !important;
+}
+.font-regular{
+    font-family: "Poppins", sans-serif;
+}
+
+.font-medium{
+    font-family: "Poppins Medium", sans-serif !important;
+}
+.font-semibold{
+    font-family: "Poppins SemiBold", sans-serif !important;
+}
+.font-bold{
+    font-family: "Poppins Bold", sans-serif !important;
+}
+.font-xs {
+    font-size: 	0.75em !important;
+}
+.font-sm {
+    font-size: 0.875em !important;
+}
+.font-legacy {
+    font-size: 	1em !important;
+}
+.font-md {
+    font-size: 1.1250em !important;
+}
+.font-mlg {
+    font-size: 1.250em !important;
+}
+.font-lg {
+    font-size: 1.5em !important;
+}
+.font-xlg {
+    font-size: 1.75em !important;
+}
+.font-xxlg {
+    font-size: 2em !important;
+}
+path > span{
+    display: none;
+}
+
+.icon{
+    flex-shrink:0;
+}
+.disabled-text{
+    color: #8c8c8c;
+}
+
+.ant-picker-large{
+ padding: 16.5px;
+}
+.ant-tooltip{
+    z-index: 2000;
+}
+
+button:disabled{
+    border: 1px solid lightgray !important;
+    background-color: inherit !important;
+    color: #8c8c8c !important;
+}
+
+.ant-carousel .slick-dots li button{
+    background: #000;
+    opacity: 0.7;
+}
+.ant-carousel .slick-dots li.slick-active button{
+    background: var(--yellow-primary);
+}
+.newMAI_svg__cls-1,.newMAIWithText_svg__cls-3{
+    stroke-width: 1.5;
+    stroke: var(--blue-primary) !important;
+}
+.newMAI_svg__cls-2, .newMAI_svg__cls-3, .newMAIWithText_svg__cls-4, .newMAIWithText_svg__cls-5{
+    display: none;
+}
+
+.ant-tooltip-inner{
+    background-color: #000;
+}
+.ant-empty-image img{
+    mix-blend-mode: multiply;
+}
+
+.ant-picker-dropdown{
+    z-index: 11111;
+}
+.ant-collapse-header{
+    align-items: center !important;
+    cursor: pointer !important;
+}
+.ant-dropdown{
+    z-index: 11111;
+}
+
+.placeholder-text{
+    color: #b2b2b2;
+    font-family: "Poppins Light", sans-serif;
+}
+
+.ant-radio-button-wrapper:hover{
+    color: var(--blue-secondary);
+}
+.ant-radio-button-wrapper-checked{
+    background: var(--blue-primary) !important;
+    border-color: var(--blue-primary) !important;
+}
+
+.p-CardForm{
+    background: red;
+}
+
+.gradient-text {
+    background: linear-gradient(
+            90deg,
+            #5ac39a 11.92%,
+            #2c68f4 47.2%,
+            #bd42f4 74.09%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bottom-fixed-buttons{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 11;
+}

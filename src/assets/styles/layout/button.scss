@@ -1,0 +1,134 @@
+.primary-button{
+  button:disabled {
+    border: 1px solid lightgray !important;
+  }
+  &.ant-tooltip-disabled-compatible-wrapper{
+    border: none !important;
+    background-color: transparent !important;
+  }
+}
+
+.primary-button.blue{
+  border: 1px solid var(--blue-primary);
+  background-color: var(--blue-primary);
+  color: var(--white);
+  &:hover{
+    transform: scale(1.05);
+    background-color: var(--blue-primary);
+  }
+}
+.primary-button.white{
+  background-color: white;
+  color: var(--blue-primary);
+  &:hover{
+    transform: scale(1.05);
+    background-color: white;
+  }
+}
+.primary-button.blue-secondary{
+  border: 1px solid var(--blue-secondary);
+  background-color: var(--blue-secondary);
+  color: var(--white);
+  &:hover{
+    transform: scale(1.05);
+    background-color: var(--blue-secondary);
+  }
+}
+.primary-button.grey{
+  border: 1px solid #d8d8d8;
+  background-color: #d8d8d8;
+  color: #333333;
+  &:hover{
+    transform: scale(1.05);
+    background-color: #d8d8d8;
+  }
+}
+.primary-button.yellow{
+  border: 1px solid var(--yellow-primary);
+  background-color: var(--yellow-primary);
+  color: var(--white);
+  &:hover{
+    transform: scale(1.05);
+    background-color: var(--yellow-primary);
+
+  }
+}
+.primary-button.red{
+  border: 1px solid var(--red-secondary);
+    background-color: var(--red-secondary);
+  color: var(--white);
+  &:hover{
+    transform: scale(1.05);
+    background-color: var(--red-secondary);
+  }
+}
+.primary-button.green{
+  border: 1px solid var(--green-primary);
+    background-color: var(--green-primary);
+  color: var(--white);
+  &:hover{
+    transform: scale(1.05);
+    background-color: var(--green-primary);
+  }
+}
+.primary-button.green-secondary{
+  border: 1px solid var(--green-secondary);
+    background-color: var(--green-secondary);
+  color: var(--white);
+  &:hover{
+    transform: scale(1.05);
+    background-color: var(--green-secondary);
+  }
+}
+.primary-button.black{
+  border: 1px solid #404040;
+    background-color: #404040;
+  color: var(--white);
+  &:hover{
+    transform: scale(1.05);
+    background-color: #404040;
+  }
+}
+
+.outlined-button.green{
+  border: 1px solid var(--green-primary);
+  color: var(--green-primary);
+  background: white;
+  &:hover{
+    transform: scale(1.05);
+    border: 1px solid var(--green-primary);
+  }
+}
+.outlined-button.red{
+  border: 1px solid var(--red-secondary);
+  color: var(--red-secondary);
+  background: white;
+  &:hover{
+    transform: scale(1.05);
+    border: 1px solid var(--red-secondary);
+  }
+}
+.outlined-button.yellow{
+  border: 1px solid var(--yellow-secondary);
+  color: var(--yellow-secondary);
+  &:hover{
+    transform: scale(1.05);
+    border: 1px solid var(--yellow-secondary);
+  }
+}
+.outlined-button.blue{
+  border: 1px solid var(--blue-primary);
+  color: var(--blue-primary);
+  &:hover{
+    transform: scale(1.05);
+    border: 1px solid var(--blue-primary);
+  }
+}
+.outlined-button.blue-secondary{
+  border: 1px solid var(--blue-secondary);
+  color: var(--blue-secondary);
+  &:hover{
+    transform: scale(1.05);
+    border: 1px solid var(--blue-secondary);
+  }
+}
